@@ -1,7 +1,8 @@
 <template>
 <section>
-<h2>Welcome to the Nuxt 4 starter</h2>
-<p>This is the app main page (pages/index.vue).</p>
+<h2 class="main-title">Welcome to the Nuxt 4 starter</h2>
+<h1>السلام عليكم ورحمه الله وبركاته</h1>
+<p class="para">This is the app main page (pages/index.vue).</p>
 
 
 <div class="card">

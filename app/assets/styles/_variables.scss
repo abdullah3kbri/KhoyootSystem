@@ -1,0 +1,180 @@
+
+$font-stack: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// primary
+$primary-900: #2699FB;
+$primary-800: #3CA3FB;
+$primary-700: #51ADFC;
+$primary-600: #67B8FC;
+$primary-500: #7DC2FD; 
+$primary-400: #93CCFD; 
+$primary-300: #A8D6FD;
+$primary-50: #E9F5FF;
+$primary-100: #D4EBFE;
+
+// success
+$success-900: #10D451;
+$success-800: #2BD965;
+$success-700: #46DE78;
+$success-600: #61E38C;
+$success-500: #7CE79F;
+$success-400: #96ECB3;
+$success-300: #B1F1C6;
+$success-200: #CCF6DA;
+$success-100: #E7FBEE;
+
+
+
+// danger
+$danger-900: #F92626;
+$danger-800: #FA3E3E;
+$danger-700: #FA5757;
+$danger-600: #FB6F6F;
+$danger-500: #FC8888;
+$danger-400: #FCA0A0;
+$danger-300: #FDB8B8;
+$danger-200: #FED1D1;
+$danger-100: #FEE9E9;
+
+
+
+// Warning
+$warning-50: #FFF3E6;
+$warning-100: #FFDAB0;
+$warning-200: #FFC88A;
+$warning-300: #FFAF54;
+$warning-400: #FFA033;
+$warning-500: #FF8800;
+$warning-600: #E87C00;
+$warning-700: #B56100;
+$warning-800: #8C4B00;
+$warning-900: #6B3900;
+
+// natural
+$natural-50: #ECECEC;
+$natural-100: #C5C5C5;
+$natural-200: #A9A9A9;
+$natural-300: #828282;
+$natural-400: #6A6A6A;
+$natural-500: #454545;
+$natural-600: #3F3F3F;
+$natural-700: #313131;
+$natural-800: #262626;
+$natural-900: #1D1D1D;
+
+// Grey
+$grey-50: #F2F3F4;
+$grey-100: #D6D9DB;
+$grey-200: #C3C6CA;
+$grey-300: #A7ACB2;
+$grey-400: #969CA3;
+$grey-500: #7C838C;
+$grey-600: #71777F;
+$grey-700: #585D63;
+$grey-800: #44484D;
+$grey-900: #34373B;
+
+//  Base
+$black: #000000;
+$white: #FFFFFF;
+
+$paragraph: #5F6368;
+
+$neutral-200: #CFCFCF;
+$neutral-900: #292929;
+$bg-gradient-w-b: linear-gradient(to bottom, #F7FAFC, #EDF2F700);
+
+// ========== Disabled ================
+
+// ======== Backgrounds ============
+// Body Background 
+$background-neutral-200: #CFCFCF;
+$neutral-50: #F7F7F7;
+//Header Background
+$neutral-800: #414141;
+$background: #F8F8F8;
+$warning-100: #FFF8EE;
+$primary-background-100: #D4EBFE;
+
+$primary-background-50: #E9F5FF;
+// Status Background ===========
+$error-background: #FEE7E7;
+
+
+$overlay-background: rgba(0, 0, 0, 0.2);
+// ========== Borders ============== 
+// Borders 
+$border-disable-readonly: 1px solid $neutral-200;
+// Border Radius 
+$border-radius-2: 2px;
+$border-radius-4: 4px;
+$border-radius-6: 6px;
+$border-radius-8: 8px;
+$border-radius-12: 12px;
+
+// Border Inputs 
+$normal-input-border: 1px solid $neutral-200;
+
+// Button Border 
+$border-1: 1px solid;
+$border-2: 2px solid;
+// Shadow 
+$boxShadow-sm:  0px 1px 2px 0px rgba(45, 54, 67, 0.05);
+$boxShadow-base:  0px 1px 2px 0px rgba(45, 54, 67, 0.04), 0px 2px 4px 0px rgba(45, 54, 67, 0.08);
+$boxShadow-md:  0px 2px 4px -2px rgba(45, 54, 67, 0.06), 0px 4px 8px -2px rgba(45, 54, 67, 0.08); 
+$boxShadow-lg: 0px 8px 11px -4px rgba(45, 54, 67, 0.04), 0px 20px 24px -4px rgba(45, 54, 67, 0.04);
+$boxShadow-xl: 0px 24px 50px -12px rgba(45, 54, 67, 0.12);
+$boxShadow-2xl: 0px 32px 64px -12px rgba(45, 54, 67, 0.14);
+
+//============= Spaceing =================
+$gap-2: 2px;
+$gap-4: 4px;
+$gap-6: 6px;
+$gap-8: 8px;
+$gap-10: 10px;
+$gap-12: 12px;
+$gap-14: 14px;
+$gap-16: 16px;
+$gap-18: 18px;
+$gap-20: 20px;
+$gap-24: 24px;
+$gap-32: 32px;
+
+
+$padding-0: 0px;
+$padding-1: 1px;
+$padding-2: 2px;
+$padding-4: 4px;
+$padding-3: 3px;
+$padding-6: 6px;
+$padding-8: 8px;
+$padding-10: 10px;
+$padding-12: 12px;
+$padding-13: 13px;
+$padding-16 :16px;
+$padding-20: 20px;
+$padding-32: 32px;
+// Margins 
+$margin-0: 0px;
+$margin-2: 2px;
+$margin-4: 4px;
+$margin-6: 6px;
+$margin-8: 8px;
+$margin-10: 10px;
+$margin-12: 12px;
+$margin-13: 13px;
+$margin-16: 16px;
+$margin-24: 24px;
+//================ Font Sizes =============
+$size-regular-10: 10px;
+$size-regular-12: 12px;
+$size-regular-14: 14px;
+$size-regular-16: 16px;
+$size-regular-18: 18px;
+$size-regular-20: 20px;
+
+// Overlay 
+$overlay: rgba(0, 0, 0, 0.25);
+
+// Line Hieght 
+$line-height: 20px

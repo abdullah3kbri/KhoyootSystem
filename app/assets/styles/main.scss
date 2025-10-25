@@ -1,0 +1,52 @@
+@use './variables';
+
+@font-face {
+    font-family: 'ExpoBook';
+    src: url('/font/Expo-Arabic-Book/Expo-Arabic-Book.ttf');
+}
+
+@font-face {
+    font-family: 'ExpoMedium';
+    src: url('/font/Expo-Arabic-Medium/Expo-Arabic-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'ExpoBold';
+    src: url('/font/Expo-Arabic-Bold/Expo-Arabic-Bold.ttf');
+    font-weight: bold;
+}
+
+:root {
+  --color-primary: #{$primary-700};
+  --font-stack: #{$font-stack};
+}
+html {
+    background: $white;
+    opacity: 1;
+    direction: rtl;
+}
+* {
+    font-family: 'ExpoBook';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* example */
+.card {
+  padding: 1rem;
+  border-radius: $border-radius-4;
+  box-shadow: $boxShadow-md;
+  background: white;
+  border: 1px solid #eee;
+}
+
+.main-title{
+    color: $primary-900
+}
+.para{
+    background-color: $danger-900;
+}

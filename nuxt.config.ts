@@ -19,10 +19,16 @@ app: {
     title: 'Khoyoot App',
     meta: [
       { name: 'description', content: 'Khoyoot App' }
-    ]
+    ],
+    htmlAttrs: {
+      dir: 'rtl',
+      lang: 'ar',
+    },
   }
 },
-css: ['~/assets/main.css'],
+  devServer: {
+    port: 3001,
+  },
 postcss: {
   plugins: {
     autoprefixer: {}
@@ -35,18 +41,38 @@ postcss: {
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxtjs/i18n',
   ],
+  i18n: {
+    langDir: "locales",
+    strategy: "prefix_except_default",
+    defaultLocale: "ar",
+    locales: [
+      {
+        code: "en",
+        iso: "en-US",
+        name: "English",
+        file: "en/index.js",
+      },
+      {
+        code: "ar",
+        iso: "ar",
+        name: "Arabic",
+        file: "ar/index.js",
+      } ],
+  },
     router: {
     options: {
       hashMode: false // فعله في حالة Desktop
     }
   },
+  css: ['~/assets/styles/main.scss'],
     vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/scss/_variables.scss" as *;'
+          additionalData: '@use "~/assets/styles/_variables.scss" as *;'
         }
       }
     },

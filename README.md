@@ -1,3 +1,9 @@
+# pages folder name >>> kabab-case
+# stores folder name >>> kabab-case
+# stores store.js name >>> camelCase
+# components files.vue name >>> camelCase
+# composables name >>> camelCase
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
