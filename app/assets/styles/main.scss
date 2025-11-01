@@ -24,13 +24,14 @@
 html {
     background: $white;
     opacity: 1;
-    direction: rtl;
+    // direction: rtl;
 }
 * {
     font-family: 'ExpoBook';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    // color: $paragraph
 }
 a{
     text-decoration: none;

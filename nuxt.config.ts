@@ -1,4 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import Aura from '@primeuix/themes/aura';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -27,7 +27,7 @@ app: {
   }
 },
   devServer: {
-    port: 3001,
+    port: 3002,
   },
 postcss: {
   plugins: {
@@ -43,7 +43,33 @@ postcss: {
     '@nuxt/test-utils',
     '@nuxt/ui',
     '@nuxtjs/i18n',
+    '@primevue/nuxt-module'
   ],
+    primevue: {
+    usePrimeVue: true,
+    autoImport: true,
+    // register all components & directives (use '*' to include all)
+    components: {
+      include: '*'    // register every PrimeVue component (tree-shakable via build)
+    },
+    directives: {
+      include: '*'    // register every PrimeVue directive (v-ripple, v-tooltip, etc.)
+    },
+    options: {
+      theme: {
+        preset: Aura,
+        options: {
+          prefix: 'p',
+          darkModeSelector: false || 'none',
+          // لتطبيق الدارك مود
+          // darkModeSelector: '.my-app-dark',
+          cssLayer: false
+        },
+      },
+      ripple: true,
+      inputVariant: 'outlined',
+    }
+  },
   i18n: {
     langDir: "locales",
     strategy: "prefix_except_default",
@@ -67,7 +93,11 @@ postcss: {
       hashMode: false // فعله في حالة Desktop
     }
   },
-  css: ['~/assets/styles/main.scss'],
+  css: [
+    '~/assets/styles/main.scss',
+    'primeicons/primeicons.css',
+    'primeflex/primeflex.css',
+  ],
     vite: {
     css: {
       preprocessorOptions: {
